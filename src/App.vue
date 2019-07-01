@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <list></list>
+    <Head :msg="title"></Head>
+    <List @getMsg="getMsgData"></List>
   </div>
 </template>
 
 <script>
-import list from "./components/List";
+import List from "./components/List";
+import Head from "./components/Header";
 export default {
   name: "app",
-  components: {
-    list
+  components: { Head, List },
+  data() {
+    return {
+      title: "待辦事項"
+    };
+  },
+  methods: {
+    getMsgData(msg) {
+      console.log(msg + "物件傳遞成功");
+    }
   }
 };
 </script>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,19 +1,28 @@
-.view {
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+#app .todo {
   width: 400px;
   border: 1px solid gray;
   margin: 20px auto;
 }
 
-.view .title {
+#app .todo__title {
   border-bottom: 1px solid gray;
 }
 
-.view ul li {
+#app .todo ul li {
   list-style: none;
   margin: 10px 0;
 }
 
-.view .finish {
+#app .todo__finish {
   color: gray;
   text-decoration: line-through;
 }
