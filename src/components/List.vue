@@ -45,22 +45,4 @@ export default {
   }
 };
 </script>
-<style>
-.view {
-  width: 400px;
-  border: 1px solid gray;
-  margin: 20px auto;
-}
-.view title {
-  border-bottom: 1px solid gray;
-}
 
-.view ul li {
-  list-style: none;
-  margin: 10px 0;
-}
-.finish {
-  color: gray;
-  text-decoration: line-through;
-}
-</style>

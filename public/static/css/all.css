@@ -1,0 +1,20 @@
+.view {
+  width: 400px;
+  border: 1px solid gray;
+  margin: 20px auto;
+}
+
+.view .title {
+  border-bottom: 1px solid gray;
+}
+
+.view ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.view .finish {
+  color: gray;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=all.css.map */
