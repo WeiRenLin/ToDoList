@@ -1,29 +1,26 @@
-#app {
+.todo {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-#app .todo {
   width: 400px;
   border: 1px solid gray;
   margin: 20px auto;
 }
 
-#app .todo__title {
-  border-bottom: 1px solid gray;
-}
-
-#app .todo ul li {
-  list-style: none;
+.todo ul li {
+  list-style-type: none;
   margin: 10px 0;
 }
 
-#app .todo__finish {
+.todo__finish {
   color: gray;
   text-decoration: line-through;
+}
+
+.todo__title {
+  border-bottom: 1px solid gray;
 }
 /*# sourceMappingURL=all.css.map */

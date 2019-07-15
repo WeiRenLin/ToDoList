@@ -1,13 +1,8 @@
 <template>
-  <h1>{{msg}}</h1>
+  <h1 class="todo__title">{{msg}}</h1>
 </template>
 <script>
 export default {
-  props: {
-    msg: {
-      type: String,
-      default: ""
-    }
-  }
+  props: ['msg'],
 };
 </script>

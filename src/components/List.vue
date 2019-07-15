@@ -1,6 +1,6 @@
 <template>
   <div class="todo">
-    <h1 class="todo__title">{{title}}</h1>
+       <Head :msg="title"></Head>
     <input type="text" v-model="newData" @keyup.enter="createNewToDo" />
     <ul>
       <li
@@ -13,13 +13,17 @@
   </div>
 </template>
 <script>
+import Head from './Header'
 export default {
   name: "List",
+  components:{Head},
   data() {
     //es6
     return {
       title: "ToDoList", //標題
-      items: [{}],
+      items: [{
+        text:''
+      }],
       newData: ""
     };
   },
